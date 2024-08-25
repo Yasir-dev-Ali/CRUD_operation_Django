@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/style.css' %}">
+    {% comment %} bootsrap {% endcomment %}
+    <link rel="stylesheet"  type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    {% comment %} Bootswatch css  link {% endcomment %}
+    <link rel="stylesheet"  type="text/css" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    {% comment %} fontawesome css  link {% endcomment %}
+    <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    {% comment %} jquery cdn {% endcomment %}
+ 
+<body>
+    <header>
+        {% comment %} Navabar {% endcomment %}
+
+      {% include "webapp/Navbar.html" %}
+    </header>
+    <main>
+       {% block content %}{% endblock %}
+       
+    </main>
+    <footer class="text-center pt-5">
+        <p>&copy; 2021 - CRUD Application</p>
+    </footer>
+
+
+
+
+<script src="{% static "js/app.js" %}"></script>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+</body>
+</html>

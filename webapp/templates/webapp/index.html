@@ -1,0 +1,28 @@
+{% extends "webapp/base.html" %}
+
+
+
+{% block content %}
+<body>
+    
+    <br>
+    <br>
+    <br>
+    <div class="container   text-center">
+        <h1>CRUD Application</h1>
+        <h3>ProjectX....</h3>
+
+        <p>Keep track of records effectively!</p>
+        <hr>
+        <a  class="btn btn-primary" href="{% url "register" %}">
+           Create Account
+        </a>
+
+        
+        <br>
+        <br>
+        
+
+    </div>
+</body>
+{% endblock %}
